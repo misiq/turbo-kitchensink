@@ -1,0 +1,21 @@
+{
+	"name": "@misq/build-ui",
+	"version": "0.0.1",
+	"type": "module",
+	"bin": {
+		"build-ui": "./dist/cli.js"
+	},
+	"scripts": {
+		"build": "bun build src/cli.ts --outdir dist --target node --format esm"
+	},
+	"dependencies": {
+		"execa": "^9.5.2",
+		"ink": "^5.0.1",
+		"react": "^18.3.1",
+		"react-devtools-core": "^7.0.1"
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.12",
+		"bun-types": "latest"
+	}
+}
