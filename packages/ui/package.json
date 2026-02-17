@@ -16,9 +16,13 @@
 	},
 	"devDependencies": {
 		"postcss": "^8.5.6",
-		"tailwindcss": "^4.1.18"
+		"tailwind-merge": "^3.4.1",
+		"tailwindcss": "^4.1.18",
+		"tsup": "^8.5.1"
 	},
 	"scripts": {
-		"shadcn": "bunx shadcn@latest add"
+		"shadcn": "bunx shadcn@latest add",
+		"build": "tsup src/index.tsx",
+		"build:watch": "tsup src/index.tsx --watch"
 	}
 }
